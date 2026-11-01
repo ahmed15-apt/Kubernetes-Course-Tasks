@@ -75,7 +75,7 @@ kubectl get pods -n webapp -l app=web
 
 ### Step 3: Verifying Functionality
 
-#### 1. Init Container Logs
+####  Init Container Logs
 Confirmed that `init-done` succeeded and logged `done`:
 ```bash
 kubectl logs deploy/web-deployment -n webapp -c init-done
@@ -135,7 +135,4 @@ kubectl get deploy web-deployment -n webapp
 | 2 | **Deployment Ready** | `kubectl get deploy web-deployment -n webapp` | `READY 3/3`, `UP-TO-DATE 3` | ✅ Passed |
 | 3 | **Pod Status** | `kubectl get pods -n webapp -l app=web` | 3 Pods running with `READY 2/2` | ✅ Passed |
 | 4 | **Init Output** | `kubectl logs deploy/web-deployment -n webapp -c init-done` | Outputs `done` | ✅ Passed |
-| 5 | **Shared Namespace** | `kubectl exec ... -c time-updater -- ps` | `nginx: master process` visible | ✅ Passed |
-| 6 | **Dynamic Timestamp** | `cat /usr/share/nginx/html/index.html` | Timestamp updates every 5s | ✅ Passed |
-| 7 | **Zero Volumes** | `{.spec.template.spec.volumes}` | `[]` (Empty output) | ✅ Passed |
-| 8 | **Failure Isolation** | `kubectl apply -f deployment.yaml` (broken) | Rollout halts; old pods remain active | ✅ Passed |
+| 5 | **Failure Isolation** | `kubectl apply -f deployment.yaml` (broken) | Rollout halts; old pods remain active | ✅ Passed |
