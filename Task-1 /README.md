@@ -4,24 +4,6 @@ Documentation and manifest submission for **Task 1: Multi-Container Pods** on a 
 
 ---
 
-## 📁 Repository Structure
-
-```text
-Kubernetes Course Tasks/
-└── Task-1/
-    ├── README.md           # Task documentation & verification
-    ├── deployment.yaml     # Kubernetes Deployment manifest
-    └── screenshots/        # Proof of execution screenshots
-        ├── 01-cluster-nodes.png
-        ├── 02-deployment-running.png
-        ├── 03-init-logs.png
-        ├── 04-sidecar-ps.png
-        ├── 05-time-update.png
-        ├── 06-no-volumes.png
-        ├── 07-failing-init.png
-        ├── 08-describe-pod.png
-        └── 09-fixed-rollout.png
-```
 
 ---
 
