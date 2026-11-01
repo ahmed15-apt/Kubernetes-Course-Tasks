@@ -4,9 +4,6 @@ Documentation and manifest submission for **Task 1: Multi-Container Pods** on a 
 
 ---
 
-
----
-
 ## 🏗️ Architecture & Specs
 
 The Pod runs **without volumes** and contains **3 containers** utilizing shared process namespaces (`shareProcessNamespace: true`):
