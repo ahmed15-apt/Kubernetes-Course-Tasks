@@ -1,6 +1,6 @@
 # Task 1: Multi-Container Pods (Init Container & Sidecar)
 
-Documentation and manifest submission for **Task 1: Multi-Container Pods** on a 3-node Minikube cluster.
+Documentation and manifest submission for **Task 1: Multi-Container Pods** on a 3-node cluster.
 
 ---
 
