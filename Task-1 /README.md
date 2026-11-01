@@ -116,3 +116,5 @@ kubectl get deploy web-deployment -n webapp
 | 3 | **Pod Status** | `kubectl get pods -n webapp -l app=web` | 3 Pods running with `READY 2/2` | ✅ Passed |
 | 4 | **Init Output** | `kubectl logs deploy/web-deployment -n webapp -c init-done` | Outputs `done` | ✅ Passed |
 | 5 | **Failure Isolation** | `kubectl apply -f deployment.yaml` (broken) | Rollout halts; old pods remain active | ✅ Passed |
+---
+![10-Port-Forward-Test.png](screenshots/10-Port-Forward-Test.png)
