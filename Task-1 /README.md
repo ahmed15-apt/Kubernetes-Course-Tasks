@@ -82,26 +82,6 @@ kubectl logs deploy/web-deployment -n webapp -c init-done
 ```
 ![03-init-logs](screenshots/03-init-logs.png)
 
-#### 2. Sidecar Process Inspection
-Verified that `time-updater` can see the Nginx master process via the shared process namespace:
-```bash
-kubectl exec deploy/web-deployment -n webapp -c time-updater -- ps
-```
-![04-sidecar-ps](screenshots/04-sidecar-ps.png)
-
-#### 3. Dynamic Page Content Update
-Checked that `index.html` updates every 5 seconds without volume mounts:
-```bash
-kubectl exec deploy/web-deployment -n webapp -c nginx -- cat /usr/share/nginx/html/index.html
-```
-![05-time-update](screenshots/05-time-update.png)
-
-#### 4. Confirming Volume-less Spec
-Verified that no volume resources are configured in the deployment template:
-```bash
-kubectl get deploy web-deployment -n webapp -o jsonpath='{.spec.template.spec.volumes}'
-```
-![06-no-volumes](screenshots/06-no-volumes.png)
 
 ---
 
@@ -123,7 +103,7 @@ kubectl describe pod <new-failing-pod> -n webapp
 ```
 ![07-failing-init](screenshots/07-failing-init.png)
 ![08-describe-pod](screenshots/08-describe-pod.png)
-
+![06-failing-init-pods](screenshots/06-failing-init-pods.png)
 #### 📝 Analysis & Question Answers:
 
 1. **Which status does the new Pod show?**
