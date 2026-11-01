@@ -83,6 +83,7 @@ kubectl describe pod <new-failing-pod> -n webapp
 ![07-failing-init](screenshots/07-failing-init.png)
 ![08-describe-pod](screenshots/08-describe-pod.png)
 ![06-failing-init-pods](screenshots/06-failing-init-pods.png)
+![05-failure-logs.png](screenshots/05-failure-logs.png)
 #### 📝 Analysis & Question Answers:
 
 1. **Which status does the new Pod show?**
