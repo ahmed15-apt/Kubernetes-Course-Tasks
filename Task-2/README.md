@@ -172,8 +172,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
 * **Expected Result:** Returns your newly posted message (`id: 3`) along with the 2 default messages.
 
-* **Screenshot:**
-  
+![Architecture Diagram](images/msg.jpg)  
 
 ### 11. Data Survives a Pod Restart
 
