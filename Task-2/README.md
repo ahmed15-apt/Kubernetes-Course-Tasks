@@ -94,7 +94,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
 * **Expected Result:** Status `Bound`, Capacity `2Gi`.
 
-* **Screenshot:**
+![Architecture Diagram](images/pv-pvx.png)
   
 
 ### 4. Deployments Ready
