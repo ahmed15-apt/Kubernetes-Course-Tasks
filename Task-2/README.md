@@ -65,7 +65,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
 * **Expected Result:** Both `webapp-api:task2` and `webapp-mysql:task2` are listed.
 
-* **Screenshot:**
+![Architecture Diagram](images/mimls.png)
   
 
 ### 2. Secret and ConfigMap
