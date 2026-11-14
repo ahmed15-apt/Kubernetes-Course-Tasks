@@ -131,7 +131,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
 * **Expected Result:** Displays the 2 default messages initialized in the `messages` table.
 
-* **Screenshot:**
+![Architecture Diagram](images/messages.jpg)
   
 
 ### 7. Ingress Resource
