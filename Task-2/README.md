@@ -185,6 +185,4 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
   ```
 
 * **Expected Result:** After the MySQL pod recreates on `minikube-m02`, your message (`id: 3`) is still persisted and returned.
-
-* **Screenshot:**
-  
+![Architecture Diagram](images/msg2.jpg)  
