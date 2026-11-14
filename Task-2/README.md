@@ -103,7 +103,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
 * **Expected Result:** `mysql` shows `1/1`, and `webapp-api` shows `2/2`.
 
-* **Screenshot:**
+![Architecture Diagram](images/deploy.png)
   
 
 ### 5. MySQL on the PV Node
