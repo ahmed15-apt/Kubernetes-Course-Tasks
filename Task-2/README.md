@@ -140,7 +140,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
 * **Expected Result:** `CLASS` is `nginx` and `ADDRESS` is populated.
 
-* **Screenshot:**
+![Architecture Diagram](images/ingress.jpg)
   
 
 ### 8. App Info Endpoint
