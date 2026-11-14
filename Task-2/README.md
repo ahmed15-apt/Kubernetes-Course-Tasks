@@ -149,7 +149,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
 * **Expected Result:** Returns JSON containing `"version": "task2"`, `"title": "hello in MLOPS MENA COMMUNITY"`, `"environment": "dev"`, and `db` connection info.
 
-* **Screenshot:**
+![Architecture Diagram](images/info.jpg)
   
 
 ### 9. Write a Message (`POST`)
