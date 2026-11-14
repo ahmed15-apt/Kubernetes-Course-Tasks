@@ -100,31 +100,27 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 ### 4. Deployments Ready
 
 * **Command:** `kubectl get deploy -n webapp-stack`
+* **Command:** `kubectl get pods -n webapp-stack -l app=mysql -o wide`
 
+* **Expected Result:** `1/1 Running` scheduled on `NODE` `minikube-m02`.
 * **Expected Result:** `mysql` shows `1/1`, and `webapp-api` shows `2/2`.
 
 ![Architecture Diagram](images/deploy.jpg)
   
 
-### 5. MySQL on the PV Node
 
-* **Command:** `kubectl get pods -n webapp-stack -l app=mysql -o wide`
-
-* **Expected Result:** `1/1 Running` scheduled on `NODE` `minikube-m02`.
-
-* **Screenshot:**
   
 
-### 6. App Environment Variables
+### 5. App Environment Variables
 
 * **Command:** `kubectl exec -n webapp-stack deploy/webapp-api -- env`
 
 * **Expected Result:** Displays `APP_TITLE`, `MYSQL_HOST=mysql`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
-* **Screenshot:**
+![Architecture Diagram](images/env.jpg)
   
 
-### 7. Default Database Data
+### 6. Default Database Data
 
 * **Command:**
 
@@ -138,7 +134,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 * **Screenshot:**
   
 
-### 8. Ingress Resource
+### 7. Ingress Resource
 
 * **Command:** `kubectl get ingress webapp-ingress -n webapp-stack`
 
@@ -147,7 +143,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 * **Screenshot:**
   
 
-### 9. App Info Endpoint
+### 8. App Info Endpoint
 
 * **Command:** `curl http://localhost:8080/api/info`
 
@@ -156,7 +152,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 * **Screenshot:**
   
 
-### 10. Write a Message (`POST`)
+### 9. Write a Message (`POST`)
 
 * **Command:**
 
@@ -170,7 +166,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 
   
 
-### 11. Read Messages (`GET`)
+### 10. Read Messages (`GET`)
 
 * **Command:** `curl http://localhost:8080/api/messages`
 
@@ -179,7 +175,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
 * **Screenshot:**
   
 
-### 12. Data Survives a Pod Restart
+### 11. Data Survives a Pod Restart
 
 * **Commands:**
 
