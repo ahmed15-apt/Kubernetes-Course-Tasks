@@ -79,8 +79,7 @@ Below is the step-by-step verification matching all 12 checks from the task tabl
   ```
 
 * **Expected Result:** `DATA` shows `3` for `mysql-secret` and `5` for `webapp-config`.
-
-* **Screenshot:**
+![Architecture Diagram](images/sec-conf.jpg)
   
 
 ### 3. PV and PVC Bound
